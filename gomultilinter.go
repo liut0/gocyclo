@@ -17,7 +17,7 @@ const (
 type GoCycloLinterFactory struct{}
 
 type GoCycloLinter struct {
-	MaxCyclo int
+	MaxCyclo int `json:"max_cyclo"`
 }
 
 var LinterFactory api.LinterFactory = &GoCycloLinterFactory{}
